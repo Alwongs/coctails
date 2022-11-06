@@ -1,0 +1,6 @@
+footer {
+    @include flex(center, center);
+    height: 64px;
+    background: rgb(24, 61, 107);
+    color: white;
+}

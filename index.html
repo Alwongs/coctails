@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Talent</title>
+    <link rel="icon" href="./img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="container nav-panel">
+            <div class="nav-panel__home">
+                <a href="#home">U-Talent</a>
+            </div> 
+
+            <ul class="nav-panel__list">
+                <li class="nav-panel__item"><a href="#menu">Меню</a></li>
+                <li class="nav-panel__item"><a href="#requirements">Рецепты</a></li>
+                <li class="nav-panel__item"><a href="#recomendations">Рекомендации</a></li>                           
+            </ul>
+            <button class="nav-panel__menu-btn"></button>                
+        </nav>       
+
+        <section class="home" id="home">
+            <div class="container home__container">
+                <div class="home__image">
+                    <img src="./img/home/coctail.png" alt="coctail-image">
+                </div>
+                <div class="home__text">
+                    <h1>Вкус</h1>
+                    <h1>детства</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="menu" id="menu">
+            <h2>Выбери свой коктейль</h2>
+
+<!-- 
+            <div class="tabs__container">
+                <ul class="tabs">
+                    <li class="tabs__item active" data-tab="#milk">Закуски</li>
+                    <li class="tabs__item" data-tab="#alcohole">Мясные блюда</li>
+                    <li class="tabs__item" data-tab="#salads">Салаты</li>
+                </ul>
+            </div>
+-->
+            <div class="menu__sliders">
+                <!-- slider1 -->
+                <div class="menu__slider-block show" id="milk">
+                    <div class="swiper menu__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#coctail1">
+                                    <div class="menu__item">
+                                        <h6 class="menu__title">Шоколадный милкшейк</h6>
+                                        <img class="menu__item-img" src="img/menu/chocolate-milk.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#coctail2">
+                                    <div class="menu__item">
+                                        <h6 class="menu__title">Гоголь-моголь</h6>
+                                        <img class="menu__item-img" src="img/menu/eggnog.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#coctail3">
+                                    <div class="menu__item">
+                                        <h6 class="menu__title">Малиновый Гоголь-моголь</h6>
+                                        <img class="menu__item-img" src="img/menu/raspberry-eggnog.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#coctail4">
+                                    <div class="menu__item">
+                                        <h6 class="menu__title">Малиновый милкшейк</h6>
+                                        <img class="menu__item-img" src="img/menu/raspberry_milk.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#coctail5">
+                                    <div class="menu__item">
+                                        <h6 class="menu__title">Снекерс милкшейк</h6>
+                                        <img class="menu__item-img" src="img/menu/snickers_milk.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#coctail6">
+                                    <div class="menu__item">
+                                        <h6 class="menu__title">Клубничный милкшейк</h6>
+                                        <img class="menu__item-img" src="img/menu/strawberry_milk.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#coctail7">
+                                    <div class="menu__item">
+                                        <h6 class="menu__title">Ежевичный милкшейк</h6>
+                                        <img class="menu__item-img" src="img/menu/blackberry_milk.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div> 
+                        <div class="swiper-pagination menu__pagination"></div>                   
+                    </div>
+                </div>
+                <!-- /end slider1 -->
+               
+                <!-- slider2 (alcohole coctails) -->
+                <div class="menu__slider-block" id="alcohole">
+                    <div class="swiper-container menu__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu/2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">175 руб</h6>
+                                        <p class="menu__desc">Тут описание меню для массовкию кушайте на здроровье</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu/2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">175 руб</h6>
+                                        <p class="menu__desc">Тут описание меню для массовкию кушайте на здроровье</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu/2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">175 руб</h6>
+                                        <p class="menu__desc">Тут описание меню для массовкию кушайте на здроровье</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu/2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">175 руб</h6>
+                                        <p class="menu__desc">Тут описание меню для массовкию кушайте на здроровье</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu/2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">175 руб</h6>
+                                        <p class="menu__desc">Тут описание меню для массовкию кушайте на здроровье</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu/2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">175 руб</h6>
+                                        <p class="menu__desc">Тут описание меню для массовкию кушайте на здроровье</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="swiper-pagination menu__pagination"></div>                  
+                    </div>
+                </div>
+                <!-- /end slider2 (alcohole coctails) --> 
+                             
+            </div>        
+        </section>
+
+
+        <section class="coctail" id="coctail1">
+            <div class="container coctail__container">
+                <h2 class="coctail__title">Шоколадный милкшейк</h2>
+                <img class="coctail__image" src="img/menu/chocolate-milk.jpg" alt="">  
+                <div class="coctail__text">
+
+                    <div class="coctail__ingredients">
+                        <h6>Необходимые ингредиенты</h6>
+                        <ul>
+                            <li>
+                                <div class="coctail__ingredient-name">Шоколадный сироп</div>
+                                <div class="coctail__ingredient-count">20 <span>мл</span></div>
+                            </li>
+                            <li> 
+                                <div class="coctail__ingredients-item">Молоко</div>
+                                <div class="coctail__ingredient-count">80 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Шоколадное мороженое</div>
+                                <div class="coctail__ingredient-count">200 <span>г</span></div>                                
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Черный шоколад</div>
+                                <div class="coctail__ingredient-count">10 <span>г</span></div>                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coctail__instruction">
+                        <h6>Рецепт приготовления</h6>
+                        <ol>
+                            <li>Положи в миксер шоколадное мороженое 200 г</li>
+                            <li>Налей молоко 80 мл и шоколадный сироп 20 мл</li>
+                            <li>Взбей без добавления льда и перелей в коктейльную креманку</li>
+                            <li>Укрась тертым шоколадом</li>
+                        </ol>
+                    </div>
+                </div>              
+            </div>
+        </section>
+        
+        <section class="coctail" id="coctail2">
+            <div class="container coctail__container">
+                <h2 class="coctail__title">Гоголь-моголь</h2>
+                <img class="coctail__image" src="img/menu/eggnog.jpg" alt="">  
+                <div class="coctail__text">
+
+                    <div class="coctail__ingredients">
+                        <h6>Необходимые ингредиенты</h6>
+                        <ul>
+                            <li>
+                                <div class="coctail__ingredient-name">Желток перепелиного яйца</div>
+                                <div class="coctail__ingredient-count">5 <span>шт</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Молоко</div>
+                                <div class="coctail__ingredient-count">150 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Нежирный сливки</div>
+                                <div class="coctail__ingredient-count">50 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Мед</div>
+                                <div class="coctail__ingredient-count">20 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Мускатный орех молотый</div>
+                                <div class="coctail__ingredient-count">1 <span>г</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Печенье</div>
+                                <div class="coctail__ingredient-count">10 <span>г</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coctail__instruction">
+                        <h6>Рецепт приготовления</h6>
+                        <ol>
+                            <li>Смешай в питчере желтки перепелиных яиц 5 шт. и мед 20 мл</li>
+                            <li>Налей нежирные сливки 50 мл и молоко 150 мл</li>
+                            <li>Нагрей коктейль паром от кофемашины, не доводя до кипения</li>
+                            <li>Перелей в бокал для ирландского кофе</li>
+                            <li>Добавь щепотку мускатного ореха молотого и укрась печеньем</li>
+                        </ol>
+                    </div>
+                </div>              
+            </div>
+        </section>
+
+        <section class="coctail" id="coctail3">
+            <div class="container coctail__container">
+                <h2 class="coctail__title">Малиновый Гоголь-моголь</h2>
+                <img class="coctail__image" src="img/menu/raspberry-eggnog.jpg" alt="">  
+                <div class="coctail__text">
+
+                    <div class="coctail__ingredients">
+                        <h6>Необходимые ингредиенты</h6>
+                        <ul>
+                            <li>
+                                <div class="coctail__ingredient-name">Молоко</div>
+                                <div class="coctail__ingredient-count">150 <span>мл</span></div>
+                            </li>                            
+                            <li>
+                                <div class="coctail__ingredient-name">Нежирный сливки</div>
+                                <div class="coctail__ingredient-count">50 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Желток перепелиного яйца</div>
+                                <div class="coctail__ingredient-count">5 <span>шт</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Малина</div>
+                                <div class="coctail__ingredient-count">25 <span>г</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Мед</div>
+                                <div class="coctail__ingredient-count">20 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Сахарный песок</div>
+                                <div class="coctail__ingredient-count">25 <span>г</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Печенье</div>
+                                <div class="coctail__ingredient-count">10 <span>г</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coctail__instruction">
+                        <h6>Рецепт приготовления</h6>
+                        <ol>
+                            <li>Положи в питчер малину 5 к. ложек, сахарный песок 5 к. ложек и подави мадлером</li>
+                            <li>Добавь желтки перепелиных яиц 5 шт., мед 20 мл, нежирные сливки 50 мл и молоко 150 мл</li>
+                            <li>Помешивая, нагрей коктейль паром от кофемашины, не доводя до кипения</li>
+                            <li>Перелей в бокал для ирландского кофе</li>
+                            <li>Укрась печеньем</li>
+                        </ol>
+                    </div>
+                </div>              
+            </div>
+        </section>
+
+        <section class="coctail" id="coctail4">
+            <div class="container coctail__container">
+                <h2 class="coctail__title">Малиновый милкшейк</h2>
+                <img class="coctail__image" src="img/menu/raspberry_milk.jpg" alt="">  
+                <div class="coctail__text">
+
+                    <div class="coctail__ingredients">
+                        <h6>Необходимые ингредиенты</h6>
+                        <ul>
+                            <li>
+                                <div class="coctail__ingredient-name">Молоко</div>
+                                <div class="coctail__ingredient-count">80 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Малиновое мороженое</div>
+                                <div class="coctail__ingredient-count">200 <span>г</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Малина</div>
+                                <div class="coctail__ingredient-count">55 <span>г</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coctail__instruction">
+                        <h6>Рецепт приготовления</h6>
+                        <ol>
+                            <li>Положи в миксер для милкшейков малину 10 ягод и малиновое мороженое 200 г</li>
+                            <li>Налей молоко 80 мл</li>
+                            <li>Взбей без добавления льда и перелей в коктейльную креманку</li>
+                            <li>Укрась ягодами малины</li>
+                        </ol>
+                    </div>
+                </div>              
+            </div>
+        </section>
+
+        <section class="coctail" id="coctail5">
+            <div class="container coctail__container">
+                <h2 class="coctail__title">Снекерс милкшейк</h2>
+                <img class="coctail__image" src="img/menu/snickers_milk.jpg" alt="">  
+                <div class="coctail__text">
+
+                    <div class="coctail__ingredients">
+                        <h6>Необходимые ингредиенты</h6>
+                        <ul>
+                            <li>
+                                <div class="coctail__ingredient-name">Карамельный сироп</div>
+                                <div class="coctail__ingredient-count">20 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Шоколадный сироп</div>
+                                <div class="coctail__ingredient-count">10 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Молоко</div>
+                                <div class="coctail__ingredient-count">80 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Ванильное мороженое</div>
+                                <div class="coctail__ingredient-count">200 <span>г</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Жареный арахис</div>
+                                <div class="coctail__ingredient-count">25 <span>г</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coctail__instruction">
+                        <h6>Рецепт приготовления</h6>
+                        <ol>
+                            <li>Положи в миксер жареный арахис 4 к. ложки и ванильное мороженое 200 г</li>
+                            <li>Налей шоколадный сироп 10 мл, карамельный сироп 20 мл и молоко 80 мл</li>
+                            <li>Взбей без добавления льда и перелей в коктейльную креманку</li>
+                            <li>Укрась жареным арахисом</li>
+                        </ol>
+                    </div>
+                </div>              
+            </div>
+        </section>
+
+        <section class="coctail" id="coctail6">
+            <div class="container coctail__container">
+                <h2 class="coctail__title">Клубничный милкшейк</h2>
+                <img class="coctail__image" src="img/menu/strawberry_milk.jpg" alt="">  
+                <div class="coctail__text">
+
+                    <div class="coctail__ingredients">
+                        <h6>Необходимые ингредиенты</h6>
+                        <ul>
+                            <li>
+                                <div class="coctail__ingredient-name">Молоко</div>
+                                <div class="coctail__ingredient-count">80 <span>мл</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Клубничное мороженое</div>
+                                <div class="coctail__ingredient-count">200 <span>г</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Клубника</div>
+                                <div class="coctail__ingredient-count">140 <span>г</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coctail__instruction">
+                        <h6>Рецепт приготовления</h6>
+                        <ol>
+                            <li>Положи в миксер клубнику 6 ягод и клубничное мороженое 200 г</li>
+                            <li>Налей молоко 80 мл</li>
+                            <li>Взбей без добавления льда и перелей в коктейльную креманку</li>
+                            <li>Укрась половинками клубники</li>
+                        </ol>
+                    </div>
+                </div>              
+            </div>
+        </section>
+
+        <section class="coctail" id="coctail7">
+            <div class="container coctail__container">
+                <h2 class="coctail__title">Ежевичный милкшейк</h2>
+                <img class="coctail__image" src="img/menu/blackberry_milk.jpg" alt="">  
+                <div class="coctail__text">
+
+                    <div class="coctail__ingredients">
+                        <h6>Необходимые ингредиенты</h6>
+                        <ul>
+                            <li>
+                                <div class="coctail__ingredient-name">Молоко</div>
+                                <div class="coctail__ingredient-count">80 <span>мл</span></div>
+                            </li>                            
+                            <li>
+                                <div class="coctail__ingredient-name">Ежевичное мороженое</div>
+                                <div class="coctail__ingredient-count">200 <span>г</span></div>
+                            </li>
+                            <li>
+                                <div class="coctail__ingredient-name">Ежевика</div>
+                                <div class="coctail__ingredient-count">42 <span>г</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coctail__instruction">
+                        <h6>Рецепт приготовления</h6>
+                        <ol>
+                            <li>Положи в миксер для милкшейков ежевику 6 ягод и ежевичное мороженое 200 г</li>
+                            <li>Добавь молоко 80 мл</li>
+                            <li>Взбей без добавления льда и перелей в коктейльную креманку</li>
+                            <li>Укрась ягодой ежевики</li>
+                        </ol>
+                    </div>
+                </div>              
+            </div>
+        </section>
+
+        <footer>
+            Сайт в разработке ..  2022
+        </footer>
+    </div>
+ 
+
+    <script src="js/swiper.min.js"></script>    
+    <script src="js/swiper.js"></script> 
+    <script src="js/index.js"></script>   
+</body>
+</html>
