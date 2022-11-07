@@ -10,20 +10,30 @@
     }    
     @media (max-width: $mobile-max) {
         flex-direction: column;
+        
     }      
 }
 .home__image {
     margin-right: 96px;
     img {
+        border: 1px solid red;
         width: 100%;
         height: auto;
         max-height: 100%;
     }
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }     
+    @media (max-width: $mobile-max) {
+        margin-right: 0;
+        margin-bottom: 32px;        
+    }     
 }
 .home__text {
 
     @media (max-width: $mobile-max) {
-        border: 1px solid red;
+
     }      
 }
 .home__text h1 {

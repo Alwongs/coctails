@@ -9,7 +9,6 @@ body {
     margin: $mc;    
 }
 .container {
-    //border: 3px solid red;
     max-width: $container;
     margin: $mc;
     padding: 0 15px;
@@ -22,7 +21,10 @@ svg {
     height: 100%;
 }
 section {
-    padding: 64px 0 64px;    
+    padding: 64px 0 64px;  
+    @media (max-width: $mobile-max) {
+        padding: 16px 0 16px; 
+    }       
 }
 section h2 {
     font-size: 42px;
