@@ -8,10 +8,9 @@
 }
 .coctail__title {
     margin-bottom: 32px;
-    color: rgb(2, 75, 107); 
+    color: rgb(2, 75, 107);   
 }
 .coctail__image {
-    //border: 3px solid blue;
     max-height: 400px;
     width: auto;
     max-width: 100%;
@@ -52,7 +51,7 @@
     font-size: 16px;
     font-weight: 300;
     border-bottom: 1px solid lightgrey;
-    padding: 3px 0;
+    padding: 5px 0;
     span {
         display: inline-block;
         min-width: 25px;
@@ -66,7 +65,7 @@
         font-size: 16px;
         font-weight: 400;
         border-bottom: 1px solid lightgrey; 
-        padding: 5px 0;       
+        padding: 6px 0;       
     } 
     @media (max-width: $mobile-max) {
         width: 100%;

@@ -1,3 +1,6 @@
+
+
+
 const swiper = new Swiper('.spec__slider', {
     loop: true,
     speed: 1000,
@@ -7,18 +10,43 @@ const swiper = new Swiper('.spec__slider', {
     }
 })
 
-const swiperMenu = new Swiper('.menu__slider', {
-    slidesPerView: 2,
-    //spaceBetween: 10,
-    grid: {
-        rows: 2
-    },
+
+let swiperMenu;
+// Неизменяемые свойства объекта swiperMenu
+const swiperMenuOptions = {
+    grid: {rows: 2},
     speed: 500,
     pagination: {
         el: '.swiper-pagination',
         clickable: true
     }
-})
+}
+if ( document.body.clientWidth <= 768 ) {
+    swiperMenu = new Swiper('.menu__slider', {
+        slidesPerView: 1,
+        ...swiperMenuOptions
+    })
+}  else {
+    swiperMenu = new Swiper('.menu__slider', {
+        slidesPerView: 2,
+        ...swiperMenuOptions
+    })        
+}
+window.addEventListener('resize', () => {
+    if ( document.body.clientWidth <= 768 ) {
+        swiperMenu = new Swiper('.menu__slider', {
+            slidesPerView: 1,
+            ...swiperMenuOptions
+        })
+    }  else {
+        swiperMenu = new Swiper('.menu__slider', {
+            slidesPerView: 2,
+            ...swiperMenuOptions
+        })        
+    }
+});
+
+
 
 let tabs = document.querySelector('.tabs')
 let menuSlider = document.querySelectorAll('.menu__slider-block')

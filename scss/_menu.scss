@@ -3,6 +3,7 @@
     border-bottom: 1px solid grey;
     min-height: 800px;
     h2 {
+        color: rgb(2, 75, 107);        
         text-align: center;
     }
     &__intro {
@@ -102,6 +103,7 @@
     font-weight: 400;
     text-align: center;
     margin-bottom: 8px;
+    color: rgb(2, 75, 107);    
     //border-bottom: 1px solid $tabs;
 }
 .menu__desc {
