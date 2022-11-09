@@ -28,23 +28,6 @@ if ( document.body.clientWidth <= 768 ) {
         ...swiperMenuOptions
     })        
 }
-window.addEventListener('resize', () => {
-
-    if ( document.body.clientWidth <= 768 ) {
-        swiperMenu = new Swiper('.menu__slider', {
-            slidesPerView: 1,
-            ...swiperMenuOptions
-        })
-    }  else {
-        swiperMenu = new Swiper('.menu__slider', {
-            slidesPerView: 2,
-            ...swiperMenuOptions
-        })        
-    }
-    overflowTabs();
-});
-
-
 
 let tabs = document.querySelector('.tabs')
 let menuSlider = document.querySelectorAll('.menu__slider-block')
@@ -63,7 +46,7 @@ tabs.addEventListener('click', function (e) {
 
 
 window.addEventListener('load', overflowTabs)
-//window.addEventListener('resize', overflowTabs)
+window.addEventListener('resize', overflowTabs)
 
 function overflowTabs() {
     let outerTabs = document.querySelector('.tabs__container')
