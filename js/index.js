@@ -25,6 +25,7 @@ function closeMenu() {
 menuList.addEventListener('click', closeMenu)
 homeLink.addEventListener('click', closeMenu)
 
+/*
 window.onscroll = function() {
     let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     if (posTop === 0) {
@@ -33,3 +34,4 @@ window.onscroll = function() {
         navPanel.classList.remove('transparent')        
     }
 }
+*/

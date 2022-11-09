@@ -1,7 +1,6 @@
 .home {
     position: relative;    
     min-height: 800px;
-    border-bottom: 1px solid grey;
 }
 .home__container {
     @include flex(start, center);

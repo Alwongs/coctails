@@ -1,7 +1,6 @@
 .coctail {
     position: relative;    
     min-height: 800px;
-    border-bottom: 1px solid grey;
 }
 .coctail__container {
     text-align: center;
@@ -41,8 +40,14 @@
     width: 30%;
     text-align: start;
     margin-right: 64px; 
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        width: 100%;
+        margin-right: 0; 
+        margin-bottom: 32px;
+    }     
     @media (max-width: $mobile-max) {
         width: 100%;
+        margin-right: 0;         
         margin-bottom: 32px;
     }     
 }
@@ -67,6 +72,9 @@
         border-bottom: 1px solid lightgrey; 
         padding: 6px 0;       
     } 
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        width: 100%;
+    }     
     @media (max-width: $mobile-max) {
         width: 100%;
     }           

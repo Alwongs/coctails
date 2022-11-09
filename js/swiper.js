@@ -1,6 +1,3 @@
-
-
-
 const swiper = new Swiper('.spec__slider', {
     loop: true,
     speed: 1000,
@@ -9,11 +6,7 @@ const swiper = new Swiper('.spec__slider', {
         clickable: true
     }
 })
-
-
-let swiperMenu;
-// Неизменяемые свойства объекта swiperMenu
-const swiperMenuOptions = {
+const swiperMenuOptions = { // Неизменяемые свойства объекта swiperMenu
     grid: {rows: 2},
     speed: 500,
     pagination: {
@@ -21,6 +14,9 @@ const swiperMenuOptions = {
         clickable: true
     }
 }
+
+let swiperMenu;
+
 if ( document.body.clientWidth <= 768 ) {
     swiperMenu = new Swiper('.menu__slider', {
         slidesPerView: 1,
